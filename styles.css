@@ -10,7 +10,13 @@
 body{
     margin: 0;
 }
-
+.micky{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-left: 500px;
+    color: purple;
+}
 .board{
     width: 100vw;
     height: 100vh;
@@ -24,7 +30,7 @@ body{
 .cell{
     width: var(--cell-size);
     height: var(--cell-size);
-    border: 1px solid black;
+    border: 1px solid rgb(112, 70, 100);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +65,7 @@ body{
 .cell.x::before,
 .cell.x::after,
 .cell.circle::before {
-    background-color: black;
+    background-color: rgb(48, 13, 48);
 }
 
 
@@ -67,7 +73,7 @@ body{
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.circle .cell:not(.x):not(.circle):hover::before {
-    background-color: lightgrey;
+    background-color: rgb(180, 177, 180)
 }
 
 .cell.x::before,
